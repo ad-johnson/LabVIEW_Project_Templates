@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1252" standalone="yes"?>
+<MetaData>
+	<ProjectTemplate>
+		<Title>Hardware Abstraction Framework</Title>
+		<Description>Abstracts the complexity of interacting with Test Instruments and automating their operation.</Description>
+		<Filters>My Templates:Test Support</Filters>
+		<Keywords>hardware;abstraction;framework;architecture</Keywords>
+		<LocationPath>HAF</LocationPath>
+		<ProjectPath>Hardware Abstraction Framework.lvproj</ProjectPath>
+		<ListboxImagePath>images/HAF_small.png</ListboxImagePath>
+		<DocumentationPath>documentation/Hardware Abstraction Framework Documentation.html</DocumentationPath>
+		<CustomVIMode>None</CustomVIMode>
+		<SortPriority>300</SortPriority>
+	</ProjectTemplate>
+</MetaData>

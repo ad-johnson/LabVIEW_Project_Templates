@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='windows-1252' standalone='yes'?>
+<CategoryOverrides>
+
+    <Category>
+	<Name>My Templates</Name>
+	<Priority>10</Priority>
+    </Category>
+
+</CategoryOverrides>
