@@ -15,15 +15,24 @@
 			<Item Name="SCPI" Type="Folder"/>
 		</Item>
 		<Item Name="Common" Type="Folder"/>
-		<Item Name="Driver" Type="Folder"/>
+		<Item Name="Driver" Type="Folder">
+			<Item Name="CommandSetting.lvclass" Type="LVClass" URL="../CommandSetting/CommandSetting.lvclass"/>
+			<Item Name="DriverSetting.lvclass" Type="LVClass" URL="../DriverSetting/DriverSetting.lvclass"/>
+			<Item Name="Setting.lvclass" Type="LVClass" URL="../Setting/Setting.lvclass"/>
+		</Item>
 		<Item Name="Test Processor" Type="Folder"/>
 	</Item>
 	<Item Name="Helper" Type="Folder">
-		<Item Name="Support" Type="Folder"/>
+		<Item Name="Support" Type="Folder">
+			<Item Name="Data Types" Type="Folder">
+				<Item Name="Valid Data Types.ctl" Type="VI" URL="../Valid Data Types.ctl"/>
+			</Item>
+		</Item>
 		<Item Name="Utility" Type="Folder"/>
 	</Item>
 	<Item Name="Implementation" Type="Folder">
 		<Item Name="Custom Command" Type="Folder"/>
 		<Item Name="Instrument" Type="Folder"/>
 	</Item>
+	<Item Name="TestValid.vi" Type="VI" URL="../TestValid.vi"/>
 </Library>
