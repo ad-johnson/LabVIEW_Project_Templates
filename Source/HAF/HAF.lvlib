@@ -12,27 +12,77 @@
 </Property>
 	<Item Name="Framework" Type="Folder">
 		<Item Name="Command" Type="Folder">
-			<Item Name="SCPI" Type="Folder"/>
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			<Item Name="Parameter.lvclass" Type="LVClass" URL="../Parameter/Parameter.lvclass"/>
+			<Item Name="ReadCommand.lvclass" Type="LVClass" URL="../ReadCommand/ReadCommand.lvclass"/>
+			<Item Name="WriteCommand.lvclass" Type="LVClass" URL="../WriteCommand/WriteCommand.lvclass"/>
 		</Item>
-		<Item Name="Common" Type="Folder"/>
+		<Item Name="Common" Type="Folder">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
 		<Item Name="Driver" Type="Folder">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			<Item Name="CommandSetting.lvclass" Type="LVClass" URL="../CommandSetting/CommandSetting.lvclass"/>
+			<Item Name="Driver.lvclass" Type="LVClass" URL="../Driver/Driver.lvclass"/>
 			<Item Name="DriverSetting.lvclass" Type="LVClass" URL="../DriverSetting/DriverSetting.lvclass"/>
+			<Item Name="SerialDriver.lvclass" Type="LVClass" URL="../SerialDriver/SerialDriver.lvclass"/>
 			<Item Name="Setting.lvclass" Type="LVClass" URL="../Setting/Setting.lvclass"/>
 		</Item>
-		<Item Name="Test Processor" Type="Folder"/>
+		<Item Name="Test Processor" Type="Folder">
+			<Item Name="CommandDirector.lvclass" Type="LVClass" URL="../CommandDirector/CommandDirector.lvclass"/>
+			<Item Name="ContinuousDirector.lvclass" Type="LVClass" URL="../ContinuousDirector/ContinuousDirector.lvclass"/>
+			<Item Name="RepeatingDirector.lvclass" Type="LVClass" URL="../RepeatingDirector/RepeatingDirector.lvclass"/>
+			<Item Name="TestProcessor.lvclass" Type="LVClass" URL="../TestProcessor/TestProcessor.lvclass"/>
+			<Item Name="TimedDirector.lvclass" Type="LVClass" URL="../TimedDirector/TimedDirector.lvclass"/>
+		</Item>
 	</Item>
 	<Item Name="Helper" Type="Folder">
 		<Item Name="Support" Type="Folder">
 			<Item Name="Data Types" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="Raise Conversion Error.vi" Type="VI" URL="../Raise Conversion Error.vi"/>
+				<Item Name="String Date Time to Timestamp.vi" Type="VI" URL="../String Date Time to Timestamp.vi"/>
+				<Item Name="String Time Date to Timestamp.vi" Type="VI" URL="../String Time Date to Timestamp.vi"/>
+				<Item Name="String To Date.vi" Type="VI" URL="../String To Date.vi"/>
+				<Item Name="String to Time.vi" Type="VI" URL="../String to Time.vi"/>
+				<Item Name="String to Double.vi" Type="VI" URL="../String to Double.vi"/>
+				<Item Name="String to I32.vi" Type="VI" URL="../String to I32.vi"/>
+				<Item Name="String to I64.vi" Type="VI" URL="../String to I64.vi"/>
 				<Item Name="Valid Data Types.ctl" Type="VI" URL="../Valid Data Types.ctl"/>
 			</Item>
 		</Item>
-		<Item Name="Utility" Type="Folder"/>
+		<Item Name="Utility" Type="Folder">
+			<Item Name="Strip Commas and Whitespace.vi" Type="VI" URL="../Strip Commas and Whitespace.vi"/>
+		</Item>
 	</Item>
 	<Item Name="Implementation" Type="Folder">
 		<Item Name="Custom Command" Type="Folder"/>
-		<Item Name="Instrument" Type="Folder"/>
+		<Item Name="Instrument" Type="Folder">
+			<Item Name="AWG" Type="Folder">
+				<Item Name="SDG1032X.lvclass" Type="LVClass" URL="../SDG1032X/SDG1032X.lvclass"/>
+			</Item>
+			<Item Name="DMM" Type="Folder">
+				<Item Name="DMM6500.lvclass" Type="LVClass" URL="../DMM6500/DMM6500.lvclass"/>
+			</Item>
+			<Item Name="PSU" Type="Folder">
+				<Item Name="HMC8043.lvclass" Type="LVClass" URL="../HMC8043/HMC8043.lvclass"/>
+			</Item>
+			<Item Name="Raspberry Pi" Type="Folder">
+				<Item Name="Pico.lvclass" Type="LVClass" URL="../Pico/Pico.lvclass"/>
+			</Item>
+			<Item Name="Scope" Type="Folder">
+				<Item Name="SDS1104X-E.lvclass" Type="LVClass" URL="../SDS1104X-E/SDS1104X-E.lvclass"/>
+			</Item>
+			<Item Name="Serial" Type="Folder">
+				<Item Name="ArduinoUnoR3.lvclass" Type="LVClass" URL="../ArduinoUnoR3/ArduinoUnoR3.lvclass"/>
+			</Item>
+		</Item>
+		<Item Name="SCPI Command" Type="Folder">
+			<Item Name="Generic" Type="Folder">
+				<Item Name="IDN.lvclass" Type="LVClass" URL="../IDN/IDN.lvclass"/>
+				<Item Name="RST.lvclass" Type="LVClass" URL="../RST/RST.lvclass"/>
+			</Item>
+		</Item>
 	</Item>
 	<Item Name="TestValid.vi" Type="VI" URL="../TestValid.vi"/>
 </Library>
