@@ -49,6 +49,16 @@
 				<Item Name="String to I32.vi" Type="VI" URL="../String to I32.vi"/>
 				<Item Name="String to I64.vi" Type="VI" URL="../String to I64.vi"/>
 				<Item Name="Valid Data Types.ctl" Type="VI" URL="../Valid Data Types.ctl"/>
+				<Item Name="Setting Map Structure.ctl" Type="VI" URL="../Setting Map Structure.ctl"/>
+			</Item>
+			<Item Name="Events" Type="Folder">
+				<Item Name="All Events.ctl" Type="VI" URL="../All Events.ctl"/>
+				<Item Name="Create All Events.vi" Type="VI" URL="../Create All Events.vi"/>
+				<Item Name="Done Event.ctl" Type="VI" URL="../Done Event.ctl"/>
+				<Item Name="Event Data.ctl" Type="VI" URL="../Event Data.ctl"/>
+				<Item Name="Pause Event.ctl" Type="VI" URL="../Pause Event.ctl"/>
+				<Item Name="Resume Event.ctl" Type="VI" URL="../Resume Event.ctl"/>
+				<Item Name="Stop Event.ctl" Type="VI" URL="../Stop Event.ctl"/>
 			</Item>
 		</Item>
 		<Item Name="Utility" Type="Folder">
@@ -84,5 +94,4 @@
 			</Item>
 		</Item>
 	</Item>
-	<Item Name="TestValid.vi" Type="VI" URL="../TestValid.vi"/>
 </Library>
