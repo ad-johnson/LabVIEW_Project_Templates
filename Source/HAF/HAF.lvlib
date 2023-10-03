@@ -50,6 +50,7 @@
 				<Item Name="String to I64.vi" Type="VI" URL="../String to I64.vi"/>
 				<Item Name="Valid Data Types.ctl" Type="VI" URL="../Valid Data Types.ctl"/>
 				<Item Name="Setting Map Structure.ctl" Type="VI" URL="../Setting Map Structure.ctl"/>
+				<Item Name="Serial Port Attributes.ctl" Type="VI" URL="../Serial Port Attributes.ctl"/>
 			</Item>
 			<Item Name="Events" Type="Folder">
 				<Item Name="All Events.ctl" Type="VI" URL="../All Events.ctl"/>
@@ -57,6 +58,11 @@
 				<Item Name="Done Event.ctl" Type="VI" URL="../Done Event.ctl"/>
 				<Item Name="Event Data.ctl" Type="VI" URL="../Event Data.ctl"/>
 				<Item Name="Pause Event.ctl" Type="VI" URL="../Pause Event.ctl"/>
+				<Item Name="Raise Done Event.vi" Type="VI" URL="../Raise Done Event.vi"/>
+				<Item Name="Raise Pause Event.vi" Type="VI" URL="../Raise Pause Event.vi"/>
+				<Item Name="Raise Resume Event.vi" Type="VI" URL="../Raise Resume Event.vi"/>
+				<Item Name="Raise Stop Event.vi" Type="VI" URL="../Raise Stop Event.vi"/>
+				<Item Name="Release All Events.vi" Type="VI" URL="../Release All Events.vi"/>
 				<Item Name="Resume Event.ctl" Type="VI" URL="../Resume Event.ctl"/>
 				<Item Name="Stop Event.ctl" Type="VI" URL="../Stop Event.ctl"/>
 			</Item>
@@ -84,7 +90,9 @@
 				<Item Name="SDS1104X-E.lvclass" Type="LVClass" URL="../SDS1104X-E/SDS1104X-E.lvclass"/>
 			</Item>
 			<Item Name="Serial" Type="Folder">
+				<Item Name="ArduinoMega2560.lvclass" Type="LVClass" URL="../ArduinoMega2560/ArduinoMega2560.lvclass"/>
 				<Item Name="ArduinoUnoR3.lvclass" Type="LVClass" URL="../ArduinoUnoR3/ArduinoUnoR3.lvclass"/>
+				<Item Name="Instrument Control Board.lvclass" Type="LVClass" URL="../Instrument Control Board/Instrument Control Board.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="SCPI Command" Type="Folder">
