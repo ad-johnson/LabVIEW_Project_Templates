@@ -25,6 +25,7 @@
 			<Item Name="CommandSetting.lvclass" Type="LVClass" URL="../CommandSetting/CommandSetting.lvclass"/>
 			<Item Name="Driver.lvclass" Type="LVClass" URL="../Driver/Driver.lvclass"/>
 			<Item Name="DriverSetting.lvclass" Type="LVClass" URL="../DriverSetting/DriverSetting.lvclass"/>
+			<Item Name="Executable.lvclass" Type="LVClass" URL="../Executable/Executable.lvclass"/>
 			<Item Name="SerialDriver.lvclass" Type="LVClass" URL="../SerialDriver/SerialDriver.lvclass"/>
 			<Item Name="Setting.lvclass" Type="LVClass" URL="../Setting/Setting.lvclass"/>
 		</Item>
@@ -69,6 +70,7 @@
 		</Item>
 		<Item Name="Utility" Type="Folder">
 			<Item Name="Strip Commas and Whitespace.vi" Type="VI" URL="../Strip Commas and Whitespace.vi"/>
+			<Item Name="Tokenise String.vi" Type="VI" URL="../Tokenise String.vi"/>
 		</Item>
 	</Item>
 	<Item Name="Implementation" Type="Folder">
