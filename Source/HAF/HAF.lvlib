@@ -67,9 +67,24 @@
 				<Item Name="Resume Event.ctl" Type="VI" URL="../Resume Event.ctl"/>
 				<Item Name="Stop Event.ctl" Type="VI" URL="../Stop Event.ctl"/>
 			</Item>
+			<Item Name="Messages" Type="Folder">
+				<Item Name="All Internal Message Ids.ctl" Type="VI" URL="../All Internal Message Ids.ctl"/>
+				<Item Name="All Message Queues.ctl" Type="VI" URL="../All Message Queues.ctl"/>
+				<Item Name="All Notification Message Ids.ctl" Type="VI" URL="../All Notification Message Ids.ctl"/>
+				<Item Name="Create All Message Queues.vi" Type="VI" URL="../Create All Message Queues.vi"/>
+				<Item Name="Dequeue Message.vi" Type="VI" URL="../Dequeue Message.vi"/>
+				<Item Name="Enqueue Message.vi" Type="VI" URL="../Enqueue Message.vi"/>
+				<Item Name="Message.ctl" Type="VI" URL="../Message.ctl"/>
+				<Item Name="Obtain Message Queue.vi" Type="VI" URL="../Obtain Message Queue.vi"/>
+				<Item Name="Release All Message Queues.vi" Type="VI" URL="../Release All Message Queues.vi"/>
+				<Item Name="Reset Message Queue.vi" Type="VI" URL="../Reset Message Queue.vi"/>
+			</Item>
+			<Item Name="Global Resources.vi" Type="VI" URL="../Global Resources.vi"/>
 		</Item>
 		<Item Name="Utility" Type="Folder">
+			<Item Name="Setup Framework.vi" Type="VI" URL="../Setup Framework.vi"/>
 			<Item Name="Strip Commas and Whitespace.vi" Type="VI" URL="../Strip Commas and Whitespace.vi"/>
+			<Item Name="Teardown Framework.vi" Type="VI" URL="../Teardown Framework.vi"/>
 			<Item Name="Tokenise String.vi" Type="VI" URL="../Tokenise String.vi"/>
 		</Item>
 	</Item>

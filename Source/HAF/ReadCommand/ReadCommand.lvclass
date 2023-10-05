@@ -68,6 +68,15 @@ Subclasses will need to provide the result processing method (Build Result overr
 			<Property Name="NI.ClassItem.State" Type="Int">1351361024</Property>
 		</Item>
 	</Item>
+	<Item Name="Post Result.vi" Type="VI" URL="../Post Result.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'*!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$B!=!!?!!!@#5B"2CZM&gt;GRJ9B.3:7&amp;E1W^N&lt;7&amp;O:#ZM&gt;G.M98.T!!^3:7&amp;E1W^N&lt;7&amp;O:#"P&gt;81!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"!1(!!(A!!(QF)159O&lt;(:M;7)45G6B:%.P&lt;7VB&lt;G1O&lt;(:D&lt;'&amp;T=Q!83%&amp;'/F*F972$&lt;WVN97ZE,GRW9WRB=X-!(%"Q!"%!!1!(%&amp;*F=X6M&gt;(-A4G^U;7:J:8)!!$B!=!!?!!!@#5B"2CZM&gt;GRJ9B.3:7&amp;E1W^N&lt;7&amp;O:#ZM&gt;G.M98.T!!Z3:7&amp;E1W^N&lt;7&amp;O:#"J&lt;A!!6!$Q!!Q!!Q!%!!1!"1!%!!1!"!!%!!9!"!!)!!E#!!"Y!!!.#!!!!!!!!!!!!!#.#Q!!!!!!!!!!!!!!!!!!!!!!!!A!!!!!!!!!#!!!!*!!!!!!!1!+!!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+	</Item>
 	<Item Name="Raw Result" Type="Property Definition">
 		<Property Name="NI.ClassItem.Property.LongName" Type="Str">Raw Result</Property>
 		<Property Name="NI.ClassItem.Property.ShortName" Type="Str">Raw Result</Property>
