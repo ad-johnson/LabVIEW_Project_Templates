@@ -79,6 +79,7 @@
 				<Item Name="Release All Message Queues.vi" Type="VI" URL="../Release All Message Queues.vi"/>
 				<Item Name="Reset Message Queue.vi" Type="VI" URL="../Reset Message Queue.vi"/>
 			</Item>
+			<Item Name="Error Handling - Process Error.vi" Type="VI" URL="../Error Handling - Process Error.vi"/>
 			<Item Name="Global Resources.vi" Type="VI" URL="../Global Resources.vi"/>
 		</Item>
 		<Item Name="Utility" Type="Folder">
