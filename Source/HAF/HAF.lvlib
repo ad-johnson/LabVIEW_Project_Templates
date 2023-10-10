@@ -12,13 +12,10 @@
 </Property>
 	<Item Name="Framework" Type="Folder">
 		<Item Name="Command" Type="Folder">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 			<Item Name="Parameter.lvclass" Type="LVClass" URL="../Parameter/Parameter.lvclass"/>
 			<Item Name="ReadCommand.lvclass" Type="LVClass" URL="../ReadCommand/ReadCommand.lvclass"/>
 			<Item Name="WriteCommand.lvclass" Type="LVClass" URL="../WriteCommand/WriteCommand.lvclass"/>
-		</Item>
-		<Item Name="Common" Type="Folder">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>
 		<Item Name="Driver" Type="Folder">
 			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
@@ -39,6 +36,15 @@
 	</Item>
 	<Item Name="Helper" Type="Folder">
 		<Item Name="Support" Type="Folder">
+			<Item Name="Application" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="AbstractResourceEnumerator.lvclass" Type="LVClass" URL="../AbstractResourceEnumerator/AbstractResourceEnumerator.lvclass"/>
+				<Item Name="Error Handling - Process Error.vi" Type="VI" URL="../Error Handling - Process Error.vi"/>
+				<Item Name="Global Resources.vi" Type="VI" URL="../Global Resources.vi"/>
+				<Item Name="Resource Structure.ctl" Type="VI" URL="../Resource Structure.ctl"/>
+				<Item Name="Teardown Framework.vi" Type="VI" URL="../Teardown Framework.vi"/>
+				<Item Name="Setup Framework.vi" Type="VI" URL="../Setup Framework.vi"/>
+			</Item>
 			<Item Name="Data Types" Type="Folder">
 				<Property Name="NI.SortType" Type="Int">3</Property>
 				<Item Name="Raise Conversion Error.vi" Type="VI" URL="../Raise Conversion Error.vi"/>
@@ -79,13 +85,9 @@
 				<Item Name="Release All Message Queues.vi" Type="VI" URL="../Release All Message Queues.vi"/>
 				<Item Name="Reset Message Queue.vi" Type="VI" URL="../Reset Message Queue.vi"/>
 			</Item>
-			<Item Name="Error Handling - Process Error.vi" Type="VI" URL="../Error Handling - Process Error.vi"/>
-			<Item Name="Global Resources.vi" Type="VI" URL="../Global Resources.vi"/>
 		</Item>
 		<Item Name="Utility" Type="Folder">
-			<Item Name="Setup Framework.vi" Type="VI" URL="../Setup Framework.vi"/>
 			<Item Name="Strip Commas and Whitespace.vi" Type="VI" URL="../Strip Commas and Whitespace.vi"/>
-			<Item Name="Teardown Framework.vi" Type="VI" URL="../Teardown Framework.vi"/>
 			<Item Name="Tokenise String.vi" Type="VI" URL="../Tokenise String.vi"/>
 		</Item>
 	</Item>
@@ -112,6 +114,7 @@
 				<Item Name="ArduinoUnoR3.lvclass" Type="LVClass" URL="../ArduinoUnoR3/ArduinoUnoR3.lvclass"/>
 				<Item Name="Instrument Control Board.lvclass" Type="LVClass" URL="../Instrument Control Board/Instrument Control Board.lvclass"/>
 			</Item>
+			<Item Name="ResourceEnumerator.lvclass" Type="LVClass" URL="../ResourceEnumerator/ResourceEnumerator.lvclass"/>
 		</Item>
 		<Item Name="SCPI Command" Type="Folder">
 			<Item Name="Generic" Type="Folder">

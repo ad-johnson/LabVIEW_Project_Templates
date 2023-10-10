@@ -11,9 +11,15 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Example" Type="Folder">
+			<Item Name="Get Id.vi" Type="VI" URL="../ResourceEnumerator/Get Id.vi"/>
+			<Item Name="Instrument Identification.vi" Type="VI" URL="../Example Application/Instrument Identification.vi"/>
+			<Item Name="Parse Identity from Result.vi" Type="VI" URL="../TestProcessor/Parse Identity from Result.vi"/>
+		</Item>
 		<Item Name="HAF.lvlib" Type="Library" URL="../HAF.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Create NI GUID.vi" Type="VI" URL="/&lt;vilib&gt;/string/Create NI GUID.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
