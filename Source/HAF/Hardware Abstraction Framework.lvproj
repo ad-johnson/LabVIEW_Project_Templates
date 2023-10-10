@@ -12,9 +12,11 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Example" Type="Folder">
-			<Item Name="Get Id.vi" Type="VI" URL="../ResourceEnumerator/Get Id.vi"/>
+			<Item Name="Supporting VIs" Type="Folder">
+				<Item Name="Get Id.vi" Type="VI" URL="../ResourceEnumerator/Get Id.vi"/>
+				<Item Name="Parse Identity from Result.vi" Type="VI" URL="../TestProcessor/Parse Identity from Result.vi"/>
+			</Item>
 			<Item Name="Instrument Identification.vi" Type="VI" URL="../Example Application/Instrument Identification.vi"/>
-			<Item Name="Parse Identity from Result.vi" Type="VI" URL="../TestProcessor/Parse Identity from Result.vi"/>
 		</Item>
 		<Item Name="HAF.lvlib" Type="Library" URL="../HAF.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
@@ -33,6 +35,10 @@
 				<Item Name="VISA Configure Serial Port (Serial Instr).vi" Type="VI" URL="/&lt;vilib&gt;/Instr/_visa.llb/VISA Configure Serial Port (Serial Instr).vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
+			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
+			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
+			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
+			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
