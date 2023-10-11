@@ -117,9 +117,21 @@
 			<Item Name="ResourceEnumerator.lvclass" Type="LVClass" URL="../ResourceEnumerator/ResourceEnumerator.lvclass"/>
 		</Item>
 		<Item Name="SCPI Command" Type="Folder">
+			<Item Name="Acquire" Type="Folder">
+				<Item Name="Measure Function.ctl" Type="VI" URL="../Measure/Measure Function.ctl"/>
+				<Item Name="Measure.lvclass" Type="LVClass" URL="../Measure/Measure.lvclass"/>
+			</Item>
+			<Item Name="Generate" Type="Folder">
+				<Item Name="Instrument.lvclass" Type="LVClass" URL="../Instrument/Instrument.lvclass"/>
+				<Item Name="Output.lvclass" Type="LVClass" URL="../Output/Output.lvclass"/>
+				<Item Name="Voltage with Step.lvclass" Type="LVClass" URL="../Voltage with Increment/Voltage with Step.lvclass"/>
+				<Item Name="Voltage.lvclass" Type="LVClass" URL="../Voltage/Voltage.lvclass"/>
+			</Item>
 			<Item Name="Generic" Type="Folder">
 				<Item Name="IDN.lvclass" Type="LVClass" URL="../IDN/IDN.lvclass"/>
 				<Item Name="RST.lvclass" Type="LVClass" URL="../RST/RST.lvclass"/>
+				<Item Name="User Defined Read.lvclass" Type="LVClass" URL="../User Defined Read/User Defined Read.lvclass"/>
+				<Item Name="User Defined Write.lvclass" Type="LVClass" URL="../User Defined Write/User Defined Write.lvclass"/>
 			</Item>
 		</Item>
 	</Item>
