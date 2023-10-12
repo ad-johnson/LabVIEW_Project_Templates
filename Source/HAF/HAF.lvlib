@@ -64,8 +64,10 @@
 				<Item Name="Create All Events.vi" Type="VI" URL="../Create All Events.vi"/>
 				<Item Name="Done Event.ctl" Type="VI" URL="../Done Event.ctl"/>
 				<Item Name="Event Data.ctl" Type="VI" URL="../Event Data.ctl"/>
+				<Item Name="Injection Event.ctl" Type="VI" URL="../Injection Event.ctl"/>
 				<Item Name="Pause Event.ctl" Type="VI" URL="../Pause Event.ctl"/>
 				<Item Name="Raise Done Event.vi" Type="VI" URL="../Raise Done Event.vi"/>
+				<Item Name="Raise Injection Event.vi" Type="VI" URL="../Raise Injection Event.vi"/>
 				<Item Name="Raise Pause Event.vi" Type="VI" URL="../Raise Pause Event.vi"/>
 				<Item Name="Raise Resume Event.vi" Type="VI" URL="../Raise Resume Event.vi"/>
 				<Item Name="Raise Stop Event.vi" Type="VI" URL="../Raise Stop Event.vi"/>
