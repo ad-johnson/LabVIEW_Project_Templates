@@ -11,11 +11,14 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Example" Type="Folder">
+		<Item Name="Examples" Type="Folder">
 			<Item Name="Supporting VIs" Type="Folder">
 				<Item Name="Get Id.vi" Type="VI" URL="../ResourceEnumerator/Get Id.vi"/>
+				<Item Name="Parse Duty Cycle from Result.vi" Type="VI" URL="../Example Application/Parse Duty Cycle from Result.vi"/>
 				<Item Name="Parse Identity from Result.vi" Type="VI" URL="../TestProcessor/Parse Identity from Result.vi"/>
+				<Item Name="Prepare Injection Commands.vi" Type="VI" URL="../Example Application/Prepare Injection Commands.vi"/>
 			</Item>
+			<Item Name="Command Injection.vi" Type="VI" URL="../Example Application/Command Injection.vi"/>
 			<Item Name="Instrument Identification.vi" Type="VI" URL="../Example Application/Instrument Identification.vi"/>
 		</Item>
 		<Item Name="HAF.lvlib" Type="Library" URL="../HAF.lvlib"/>
@@ -38,7 +41,6 @@
 			<Item Name="_ChannelSupport.lvlib" Type="Library" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/_ChannelSupport.lvlib"/>
 			<Item Name="ChannelProbePositionAndTitle.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbePositionAndTitle.vi"/>
 			<Item Name="ChannelProbeWindowStagger.vi" Type="VI" URL="/&lt;resource&gt;/ChannelSupport/_ChannelSupport/ChannelProbeWindowStagger.vi"/>
-			<Item Name="Injection Data.ctl" Type="VI" URL="../Injection Data.ctl"/>
 			<Item Name="Tag-bool.lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/Tag-bool.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
