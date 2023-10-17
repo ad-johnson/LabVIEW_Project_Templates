@@ -19,3 +19,4 @@
 # Not needed
 *.bak*
 .DS_Store
+Thumbs.db
