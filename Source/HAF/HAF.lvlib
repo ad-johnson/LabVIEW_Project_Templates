@@ -26,11 +26,11 @@
 			<Item Name="SerialDriver.lvclass" Type="LVClass" URL="../SerialDriver/SerialDriver.lvclass"/>
 			<Item Name="Setting.lvclass" Type="LVClass" URL="../Setting/Setting.lvclass"/>
 		</Item>
-		<Item Name="Test Processor" Type="Folder">
+		<Item Name="Interaction Processor" Type="Folder">
 			<Item Name="CommandDirector.lvclass" Type="LVClass" URL="../CommandDirector/CommandDirector.lvclass"/>
 			<Item Name="ContinuousDirector.lvclass" Type="LVClass" URL="../ContinuousDirector/ContinuousDirector.lvclass"/>
+			<Item Name="InteractionProcessor.lvclass" Type="LVClass" URL="../TestProcessor/InteractionProcessor.lvclass"/>
 			<Item Name="RepeatingDirector.lvclass" Type="LVClass" URL="../RepeatingDirector/RepeatingDirector.lvclass"/>
-			<Item Name="TestProcessor.lvclass" Type="LVClass" URL="../TestProcessor/TestProcessor.lvclass"/>
 			<Item Name="TimedDirector.lvclass" Type="LVClass" URL="../TimedDirector/TimedDirector.lvclass"/>
 		</Item>
 	</Item>
@@ -94,7 +94,30 @@
 		</Item>
 	</Item>
 	<Item Name="Implementation" Type="Folder">
-		<Item Name="Custom Command" Type="Folder"/>
+		<Item Name="Command" Type="Folder">
+			<Item Name="Custom Command" Type="Folder">
+				<Item Name="Generic" Type="Folder">
+					<Item Name="User Defined Read.lvclass" Type="LVClass" URL="../User Defined Read/User Defined Read.lvclass"/>
+					<Item Name="User Defined Write.lvclass" Type="LVClass" URL="../User Defined Write/User Defined Write.lvclass"/>
+				</Item>
+			</Item>
+			<Item Name="SCPI Command" Type="Folder">
+				<Item Name="Acquire" Type="Folder">
+					<Item Name="Measure Function.ctl" Type="VI" URL="../Measure/Measure Function.ctl"/>
+					<Item Name="Measure.lvclass" Type="LVClass" URL="../Measure/Measure.lvclass"/>
+				</Item>
+				<Item Name="Generate" Type="Folder">
+					<Item Name="Instrument.lvclass" Type="LVClass" URL="../Instrument/Instrument.lvclass"/>
+					<Item Name="Output.lvclass" Type="LVClass" URL="../Output/Output.lvclass"/>
+					<Item Name="Voltage with Step.lvclass" Type="LVClass" URL="../Voltage with Increment/Voltage with Step.lvclass"/>
+					<Item Name="Voltage.lvclass" Type="LVClass" URL="../Voltage/Voltage.lvclass"/>
+				</Item>
+				<Item Name="Generic" Type="Folder">
+					<Item Name="IDN.lvclass" Type="LVClass" URL="../IDN/IDN.lvclass"/>
+					<Item Name="RST.lvclass" Type="LVClass" URL="../RST/RST.lvclass"/>
+				</Item>
+			</Item>
+		</Item>
 		<Item Name="Instrument" Type="Folder">
 			<Item Name="AWG" Type="Folder">
 				<Item Name="SDG1032X.lvclass" Type="LVClass" URL="../SDG1032X/SDG1032X.lvclass"/>
@@ -117,24 +140,6 @@
 				<Item Name="Instrument Control Board.lvclass" Type="LVClass" URL="../Instrument Control Board/Instrument Control Board.lvclass"/>
 			</Item>
 			<Item Name="ResourceEnumerator.lvclass" Type="LVClass" URL="../ResourceEnumerator/ResourceEnumerator.lvclass"/>
-		</Item>
-		<Item Name="SCPI Command" Type="Folder">
-			<Item Name="Acquire" Type="Folder">
-				<Item Name="Measure Function.ctl" Type="VI" URL="../Measure/Measure Function.ctl"/>
-				<Item Name="Measure.lvclass" Type="LVClass" URL="../Measure/Measure.lvclass"/>
-			</Item>
-			<Item Name="Generate" Type="Folder">
-				<Item Name="Instrument.lvclass" Type="LVClass" URL="../Instrument/Instrument.lvclass"/>
-				<Item Name="Output.lvclass" Type="LVClass" URL="../Output/Output.lvclass"/>
-				<Item Name="Voltage with Step.lvclass" Type="LVClass" URL="../Voltage with Increment/Voltage with Step.lvclass"/>
-				<Item Name="Voltage.lvclass" Type="LVClass" URL="../Voltage/Voltage.lvclass"/>
-			</Item>
-			<Item Name="Generic" Type="Folder">
-				<Item Name="IDN.lvclass" Type="LVClass" URL="../IDN/IDN.lvclass"/>
-				<Item Name="RST.lvclass" Type="LVClass" URL="../RST/RST.lvclass"/>
-				<Item Name="User Defined Read.lvclass" Type="LVClass" URL="../User Defined Read/User Defined Read.lvclass"/>
-				<Item Name="User Defined Write.lvclass" Type="LVClass" URL="../User Defined Write/User Defined Write.lvclass"/>
-			</Item>
 		</Item>
 	</Item>
 </Library>
