@@ -167,9 +167,9 @@ Processing of `Commands` is performed through `CommandDirector` instances and an
 
         `waitTime` is a duration in milliseconds between processing of each Command.  So with a wait time of 10ms, and three Commands, processing will be Command1-wait 10ms-Command2-wait 10ms-Command3.  For a TimedDirector, this wait also counts towards the processing duration.
 
-* **InteractionProcessor:** This is the framework's main control processor, responsible for processing all CommandDirectors.  You only need one instance of this and processing starts by calling member `runInteraction()`.  The InteractionProcessor listens for `Stop`, `Pause`, and `Resume` events, acting accordingly on the CommandDirectors.  Although not a member property, `processDirectors()` takes a `waitTime` as a parameter which acts the same way as `waitTime` on the CommandDirector, except the wait is between Directors not Commands.
+* **InteractionProcessor:** This is the framework's main control processor, responsible for processing all CommandDirectors.  You only need one instance of this and processing starts by calling member `runInteraction()`.  The InteractionProcessor listens for `Stop`, `Pause`, and `Resume` events, acting accordingly on the CommandDirectors.  Although not a member property, `runInteraction()` takes a `waitTime` as a parameter which acts the same way as `waitTime` on the CommandDirector, except the wait is between Directors not Commands.
 
-    You select the CommandDirector(s) you want and add them to the InteractionProcessor.  Thus you can mix-and-match the interactions you want.  For example, you could load a `Reset` Command into a CommandDirector, followed by a `Measure` Command into a ContinousDirector.  This would then reset the instrument and continuously perform a measurement.
+    You select the CommandDirector(s) you want and add them to the InteractionProcessor.  Thus you can mix-and-match the interactions you want.  For example, you could load a `Reset` Command into a CommandDirector, followed by a `Measure` Command into a ContinuousDirector.  This would then reset the instrument and continuously perform a measurement.
 
 You should have no need to create an alternative InteractionProcessor but you may want a different CommandDirector.  Create this as a subclass of one of the existing Directors and implement `shouldContinue()` (return true if processing of Commands should occur again) and if necessary `initialise()` if the CommandDirector needs any setup (for example, the TimedDirector sets its `startMilliseconds` property in initialise so it can determine when the duration has elapsed.) 
 
@@ -205,7 +205,7 @@ The lead-in is the same as a WriteCommand, including Prepare To Execute but the 
 * **Execute Write Read Query:** sends the command to the Instrument and reads a result.  Results are issued for the Command and the Parameters as applicable.  See the Documentation tab on the member for details on how the result is parsed into constituent elements.
 * **Write Raw Result:** saves the unformatted Instrument response for later processing
 * **Write Param Values:** saves the unformatted Parameter responses for later processing
-* **Post Result:** if a Results Notifier was passed with the Command, the Command adds itself to the Results Notifier and raises the Notification; otherwise, it adds a `result` message on the `Notification Queue` with the Command set as message data.  In either case, the Interaction Application should read this message and arrange for the result to be processed as required - not forgetting that results may be stored in the parameters if used.  Note that that a result sent as a Notification can be processes immediately, whereas the result on the Notification Queue will be held there until the InteractionProcessor has finished all CommandDirectors and is "Done".
+* **Post Result:** if a Results Notifier was passed with the Command, the Command adds itself to the Results Notifier and raises the Notification; otherwise, it adds a `result` message on the `Notification Queue` with the Command set as message data.  In either case, the Interaction Application should read this message and arrange for the result to be processed as required - not forgetting that results may be stored in the parameters if used.  Note that that a result sent as a Notification can be processed immediately, whereas the result on the Notification Queue will be held there until the InteractionProcessor has finished all CommandDirectors and is "Done".
 
 ## Examples
 Example usage of the framework is provided so that you can use these as a basis of your own Interaction Applications but also get a better idea of how the framework actually works.  All examples are in virtual folder `Examples`.
@@ -213,7 +213,7 @@ Example usage of the framework is provided so that you can use these as a basis 
 They make use of the Drivers found in Virtual Folder `Implementation\Instrument`.  To run these with your own instruments you will need to create your own Drivers and make the necessary changes to the example implementations.  In some cases it may be as simple as ensuring that the VI `Get All Instruments` in class `ResourceEnumerator` is modified and that you have followed the implementation pattern for the existing instruments.
 
 ### 1-Instrument Identification
-This example enumerates any instruments connected to the PC running LabView and presents the list to the user.  Selecting an instrument, by name, and pressing 'Get Id' will return the instrument identity.  
+This example enumerates any instruments connected to the PC running LabVIEW and presents the list to the user.  Selecting an instrument, by name, and pressing 'Get Id' will return the instrument identity.  
 
 This is accomplished using the Driver associated to the selected name, the `Identity` Command and a `CommandDirector` (one-time execution.)  Results are provided as a Notification for handling and displaying on the UI.
 
