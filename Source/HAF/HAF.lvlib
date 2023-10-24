@@ -29,7 +29,7 @@
 		<Item Name="Interaction Processor" Type="Folder">
 			<Item Name="CommandDirector.lvclass" Type="LVClass" URL="../CommandDirector/CommandDirector.lvclass"/>
 			<Item Name="ContinuousDirector.lvclass" Type="LVClass" URL="../ContinuousDirector/ContinuousDirector.lvclass"/>
-			<Item Name="InteractionProcessor.lvclass" Type="LVClass" URL="../TestProcessor/InteractionProcessor.lvclass"/>
+			<Item Name="InteractionProcessor.lvclass" Type="LVClass" URL="../InteractionProcessor/InteractionProcessor.lvclass"/>
 			<Item Name="RepeatingDirector.lvclass" Type="LVClass" URL="../RepeatingDirector/RepeatingDirector.lvclass"/>
 			<Item Name="TimedDirector.lvclass" Type="LVClass" URL="../TimedDirector/TimedDirector.lvclass"/>
 		</Item>

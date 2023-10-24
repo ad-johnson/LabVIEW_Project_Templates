@@ -13,9 +13,9 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="Supporting VIs" Type="Folder">
-				<Item Name="Get Id.vi" Type="VI" URL="../ResourceEnumerator/Get Id.vi"/>
+				<Item Name="Get Id.vi" Type="VI" URL="../Example Application/Get Id.vi"/>
 				<Item Name="Parse Duty Cycle from Result.vi" Type="VI" URL="../Example Application/Parse Duty Cycle from Result.vi"/>
-				<Item Name="Parse Identity from Result.vi" Type="VI" URL="../TestProcessor/Parse Identity from Result.vi"/>
+				<Item Name="Parse Identity from Result.vi" Type="VI" URL="../Example Application/Parse Identity from Result.vi"/>
 				<Item Name="Prepare Injection Commands.vi" Type="VI" URL="../Example Application/Prepare Injection Commands.vi"/>
 			</Item>
 			<Item Name="Command Injection.vi" Type="VI" URL="../Example Application/Command Injection.vi"/>
