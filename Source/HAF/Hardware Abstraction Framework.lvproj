@@ -13,13 +13,18 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Examples" Type="Folder">
 			<Item Name="Supporting VIs" Type="Folder">
+				<Item Name="Build Waveform Executables.vi" Type="VI" URL="../Example Application/Build Waveform Executables.vi"/>
+				<Item Name="Create Buffer.vi" Type="VI" URL="../Example Application/Create Buffer.vi"/>
 				<Item Name="Get Id.vi" Type="VI" URL="../Example Application/Get Id.vi"/>
 				<Item Name="Parse Duty Cycle from Result.vi" Type="VI" URL="../Example Application/Parse Duty Cycle from Result.vi"/>
 				<Item Name="Parse Identity from Result.vi" Type="VI" URL="../Example Application/Parse Identity from Result.vi"/>
+				<Item Name="Parse Waveform from Result.vi" Type="VI" URL="../Example Application/Parse Waveform from Result.vi"/>
 				<Item Name="Prepare Injection Commands.vi" Type="VI" URL="../Example Application/Prepare Injection Commands.vi"/>
+				<Item Name="Setup Waveform Measurement.vi" Type="VI" URL="../Example Application/Setup Waveform Measurement.vi"/>
 			</Item>
 			<Item Name="Command Injection.vi" Type="VI" URL="../Example Application/Command Injection.vi"/>
 			<Item Name="Instrument Identification.vi" Type="VI" URL="../Example Application/Instrument Identification.vi"/>
+			<Item Name="Waveform Measurement.vi" Type="VI" URL="../Example Application/Waveform Measurement.vi"/>
 		</Item>
 		<Item Name="HAF.lvlib" Type="Library" URL="../HAF.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">

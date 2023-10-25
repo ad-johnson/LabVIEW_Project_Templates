@@ -18,7 +18,7 @@
 			<Item Name="WriteCommand.lvclass" Type="LVClass" URL="../WriteCommand/WriteCommand.lvclass"/>
 		</Item>
 		<Item Name="Driver" Type="Folder">
-			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			<Property Name="NI.LibItem.Scope" Type="Int">1</Property>
 			<Item Name="CommandSetting.lvclass" Type="LVClass" URL="../CommandSetting/CommandSetting.lvclass"/>
 			<Item Name="Driver.lvclass" Type="LVClass" URL="../Driver/Driver.lvclass"/>
 			<Item Name="DriverSetting.lvclass" Type="LVClass" URL="../DriverSetting/DriverSetting.lvclass"/>
@@ -103,7 +103,6 @@
 			</Item>
 			<Item Name="SCPI Command" Type="Folder">
 				<Item Name="Acquire" Type="Folder">
-					<Item Name="Measure Function.ctl" Type="VI" URL="../Measure/Measure Function.ctl"/>
 					<Item Name="Measure.lvclass" Type="LVClass" URL="../Measure/Measure.lvclass"/>
 				</Item>
 				<Item Name="Generate" Type="Folder">
@@ -124,6 +123,7 @@
 			</Item>
 			<Item Name="DMM" Type="Folder">
 				<Item Name="DMM6500.lvclass" Type="LVClass" URL="../DMM6500/DMM6500.lvclass"/>
+				<Item Name="Measure Function.ctl" Type="VI" URL="../Measure/Measure Function.ctl"/>
 			</Item>
 			<Item Name="PSU" Type="Folder">
 				<Item Name="HMC8043.lvclass" Type="LVClass" URL="../HMC8043/HMC8043.lvclass"/>
